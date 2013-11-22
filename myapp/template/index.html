@@ -1,97 +1,98 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" type="image/ico" href="https://dl.dropboxusercontent.com/u/60513715/favicon.ico" />
-  
-    <title>04KEISOKU example</title>
-    
-    <style type="text/css" title="currentStyle">
-      @import "{{ STATIC_URL }}DataTables-1.9.4/media/css/demo_page.css";
-      @import "{{ STATIC_URL }}DataTables-1.9.4/media/css/demo_table.css";
-    </style>
-
-    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">                                                                                                      
-   
-    <script type="text/javascript" language="javascript" src="{{ STATIC_URL }}DataTables-1.9.4/media/js/jquery.js"></script>
-    <script type="text/javascript" language="javascript" src="{{ STATIC_URL }}DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(document).ready(function() {
-            $('.datatable').dataTable(
-                {
-                    "aaSorting": [[ 3, "desc" ]],
-                    "bAutoWidth":false,
-                } 
-            );
-        } );
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <link rel="shortcut icon" type="image/ico" href="https://dl.dropboxusercontent.com/u/60513715/favicon.ico" />
         
-    </script>
-  </head>
-  
-  
-
-  
-  
-  <body id="dt_example" class="ex_highlight_row">
-    <h1>GET[Read]</h1>
-    <div id="container">
-      <div id="demo">
-
-    <table style="width: 900px;margin-left: -50px;" cellpadding="0" cellspacing="0" class="display datatable table-bordered table-condensed" id="example">
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>username</th>
-          <th>description</th>
-          <th>score</th>
-          <th style="width: 250px;">datetime</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for record in records %}
-        <tr class= {{record.grade}}>
-          <td class="right">{{ record.id }}         </td>
-          <td class="left">{{ record.username }}   </td>
-          <td class="left">{{ record.description }}</td>
-          <td class="right">{{ record.score }}      </td>
-          <td class="left">{{ record.datetime }}   </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-      </div>
-    </div>
-      
-    <h1>POST[Create]</h1>
-    <form action='/mysite/myapp/create/' method='post'>
-      {% csrf_token %}
-      username(text):    <input type='text' name='username'>    <br/>
-      description(text): <input type='text' name='description'> <br/>
-      score(int):        <input type='text' name='score'>       <br/>
-      <input type='submit' value='register'>
-    </form>
-    
-    <h1>POST/DELETE[Delete]</h1>
-    <form action='/mysite/myapp/delete/' method='post'>
-      {% csrf_token %}
-      delete_id(int):    <input type='text' name='id'>          <br/>
-      <input type='submit' value='delete'>
-    </form>
-
-    <h1>POST/PUT[Update]</h1>
-    <form action='/mysite/myapp/update/' method='post'>
-      {% csrf_token %}
-      update_id(int):    <input type='text' name='id'>          <br/>
-      username(text):    <input type='text' name='username'>    <br/>
-      description(text): <input type='text' name='description'> <br/>
-      score(int):        <input type='text' name='score'>       <br/>
-      <input type='submit' value='update'>
-    </form>
-
-
-
+        <title>04KEISOKU example</title>
+        
+        <style type="text/css" title="currentStyle">
+            @import "{{ STATIC_URL }}DataTables-1.9.4/media/css/demo_page.css";
+            @import "{{ STATIC_URL }}DataTables-1.9.4/media/css/demo_table.css";
+        </style>
+        
+        <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">                                                                                                      
+        
+        <script type="text/javascript" language="javascript" src="{{ STATIC_URL }}DataTables-1.9.4/media/js/jquery.js"></script>
+        <script type="text/javascript" language="javascript" src="{{ STATIC_URL }}DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(document).ready(function() {
+                $('.datatable').dataTable(
+                    {
+                        "aaSorting": [[ 3, "desc" ]],
+                        "bAutoWidth":false,
+                    } 
+                );
+            } );
+            
+        </script>
+    </head>
     
     
     
-  </body>
+    
+    
+    <body id="dt_example" class="ex_highlight_row">
+        <h1>Read[GET]</h1>
+        <div id="container">
+            <div id="demo">
+                
+                <table style="width: 900px;margin-left: -50px;" cellpadding="0" cellspacing="0" class="display datatable table-bordered table-condensed" id="example">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>username</th>
+                            <th>description</th>
+                            <th>score</th>
+                            <th style="width: 250px;">datetime</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for record in records %}
+                        <tr class= {{record.grade}}>
+                            <td class="right">{{ record.id }}         </td>
+                            <td class="left">{{ record.username }}   </td>
+                            <td class="left">{{ record.description }}</td>
+                            <td class="right">{{ record.score }}      </td>
+                            <td class="left">{{ record.datetime }}   </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <h1>Create[POST]</h1>
+        <form action='/mysite/myapp/create/' method='post'>
+            {% csrf_token %}
+            username(text):    <input type='text' name='username'>    <br/>
+            description(text): <input type='text' name='description'> <br/>
+            score(int):        <input type='text' name='score'>       <br/>
+            <input type='submit' value='Create(POST)'>
+        </form>
+        
+        <h1>Delete[POST/DELETE]</h1>
+        <form action='/mysite/myapp/delete/' method='post'>
+            {% csrf_token %}
+            delete_id(int):    <input type='text' name='id'>          <br/>
+            <input type='submit' value='Delete(POST)'>
+        </form>
+<!--
+<input type='submit' value='Delete(DELETE)'>NOT IMPLEMENTED!
+-->        
+        <h1>Update[POST/PUT]</h1>
+        <form action='/mysite/myapp/update/' method='post'>
+            {% csrf_token %}
+            update_id(int):    <input type='text' name='id'>          <br/>
+            username(text):    <input type='text' name='username'>    <br/>
+            description(text): <input type='text' name='description'> <br/>
+            score(int):        <input type='text' name='score'>       <br/>
+            <input type='submit' value='Update(POST)'>
+        </form>
+<!--
+<input type='submit' value='Update(PUT)'>NOT IMPLEMENTED!
+-->
+        
+        
+    </body>
 </html>
