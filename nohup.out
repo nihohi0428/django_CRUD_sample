@@ -2218,3 +2218,6 @@ Quit the server with CONTROL-C.
 [22/Nov/2013 11:15:42] "GET /mysite/myapp/ HTTP/1.1" 200 10100
 [22/Nov/2013 11:15:42] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
 [22/Nov/2013 11:15:42] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[22/Nov/2013 12:32:47] "GET / HTTP/1.1" 200 65
+[22/Nov/2013 12:32:52] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[22/Nov/2013 12:32:52] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
