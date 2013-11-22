@@ -1,0 +1,252 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/media/images/favicon.ico" />
+    
+    <title>DataTables example</title>
+    
+    <style type="text/css" title="currentStyle">
+      @import "{{ STATIC_URL }}DataTables-1.9.4/media/css/demo_page.css";
+      @import "{{ STATIC_URL }}DataTables-1.9.4/media/css/demo_table.css";
+    </style>
+    
+    <script type="text/javascript" language="javascript" src="{{ STATIC_URL }}DataTables-1.9.4/media/js/jquery.js"></script>
+    <script type="text/javascript" language="javascript" src="{{ STATIC_URL }}DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+        $('#example').dataTable( {
+          "aaSorting": [[ 0, "desc" ]]
+        } );
+      } );
+    </script>
+<!--
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+-->
+  </head>
+  
+  <body>
+    <div id="container">
+      
+      <div id="demo">
+        <table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+          <thead>
+            <tr>
+              <th>Rendering engine</th>
+              <th>Browser</th>
+              <th>Platform(s)</th>
+              <th>Engine version</th>
+              <th>CSS grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="gradeX">
+              <td>Trident</td>
+              <td>Internet
+                Explorer 4.0</td>
+              <td>Win 95+</td>
+              <td class="center">4</td>
+              <td class="center">X</td>
+            </tr>
+            <tr class="gradeC">
+              <td>Trident</td>
+              <td>Internet
+                Explorer 5.0</td>
+              <td>Win 95+</td>
+              <td class="center">5</td>
+              <td class="center">C</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Trident</td>
+              <td>Internet
+                Explorer 5.5</td>
+              <td>Win 95+</td>
+              <td class="center">5.5</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Trident</td>
+              <td>Internet
+                Explorer 6</td>
+              <td>Win 98+</td>
+              <td class="center">6</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Trident</td>
+              <td>Internet Explorer 7</td>
+              <td>Win XP SP2+</td>
+              <td class="center">7</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Trident</td>
+              <td>AOL browser (AOL desktop)</td>
+              <td>Win XP</td>
+              <td class="center">6</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Camino 1.0</td>
+              <td>OSX.2+</td>
+              <td class="center">1.8</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Camino 1.5</td>
+              <td>OSX.3+</td>
+              <td class="center">1.8</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Netscape 7.2</td>
+              <td>Win 95+ / Mac OS 8.6-9.2</td>
+              <td class="center">1.7</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Netscape Browser 8</td>
+              <td>Win 98SE+</td>
+              <td class="center">1.7</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Netscape Navigator 9</td>
+              <td>Win 98+ / OSX.2+</td>
+              <td class="center">1.8</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Mozilla 1.0</td>
+              <td>Win 95+ / OSX.1+</td>
+              <td class="center">1</td>
+              <td class="center">A</td>
+            </tr>
+            <tr class="gradeA">
+              <td>Gecko</td>
+              <td>Mozilla 1.1</td>
+              <td>Win 95+ / OSX.1+</td>
+              <td class="center">1.1</td>
+              <td class="center">A</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Rendering engine</th>
+              <th>Browser</th>
+              <th>Platform(s)</th>
+              <th>Engine version</th>
+              <th>CSS grade</th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+    
+  
+    
+    
+    
+    
+    
+    <h1>test</h1>
+    <table class="datatable table table-bordered table-striped" width="100%">
+      <thead>
+        <tr>
+          <th style="width:120px;">投稿日</th>
+          <th>広告名</th>
+          <th>クチコミ内容</th>
+          <th style="width:80px;">チェック</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2013年09月11日</td>
+          <td>化粧品ブログに被リンクつきでクチコミして下さい。</td>
+          <td>http://www.yahoo.co.jp にハゲと言うことでクチコミしました。なんか良い事無いかなと思う日々でごじあます。</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>2013年09月11日</td>
+          <td>化粧品ブログに被リンクつきでクチコミして下さい。</td>
+          <td>http://www.yahoo.co.jp にハゲと言うことでクチコミしました。なんか良い事無いかなと思う日々でごじあます。</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>2013年09月09日</td>
+          <td>化粧品ブログに被リンクつきでクチコミして下さい。</td>
+          <td>http://www.yahoo.co.jp にハゲと言うことでクチコミしました。なんか良い事無いかなと思う日々でごじあます。</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>2013年09月11日</td>
+          <td>化粧品ブログに被リンクつきでクチコミして下さい。</td>
+          <td>http://www.yahoo.co.jp にハゲと言うことでクチコミしました。なんか良い事無いかなと思う日々でごじあます。</td>
+          <td>3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>投稿日</th>
+          <th>広告名</th>
+          <th>クチコミ内容</th>
+          <th>チェック</th>
+        </tr>
+      </tfoot>
+    </table>
+    
+    
+    
+    
+    <h1>GET[Read]</h1>
+    <table class="datatable table table-striped table-bordered table-condensed">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>username</th>
+          <th>description</th>
+          <th>score</th>
+          <th>datetime</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for record in records %}
+        <tr>
+          <td>{{ record.id }}         </td>
+          <td>{{ record.username }}   </td>
+          <td>{{ record.description }}</td>
+          <td>{{ record.score }}      </td>
+          <td>{{ record.datetime }}   </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+    <h1>POST[Create]</h1>
+    <form action='/mysite/myapp/create/' method='post'>
+      {% csrf_token %}
+      username(text):    <input type='text' name='username'>    <br/>
+      description(text): <input type='text' name='description'> <br/>
+      score(int):        <input type='text' name='score'>       <br/>
+      <input type='submit' value='register'>
+    </form>
+    
+    <h1>POST/DELETE[Delete]</h1>
+    <form action='/mysite/myapp/delete/' method='post'>
+      {% csrf_token %}
+      delete_id(int):    <input type='text' name='id'>          <br/>
+      <input type='submit' value='delete'>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+    
+    <h1>POST/PUT[Update]</h1>
+    #implement me!
+    
+  </body>
+</html>

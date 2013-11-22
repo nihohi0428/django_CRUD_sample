@@ -1,0 +1,2220 @@
+Validating models...
+
+0 errors found
+November 20, 2013 - 18:46:12
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x2e35a10>>
+Validating models...
+
+0 errors found
+November 20, 2013 - 18:48:34
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 114, in inner_run
+    ipv6=self.use_ipv6, threading=threading)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 193, in run
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 225, in serve_forever
+    r, w, e = select.select([self], [], [], poll_interval)
+AttributeError: 'NoneType' object has no attribute 'select'
+[20/Nov/2013 18:49:36] "GET /mysite/myapp HTTP/1.1" 301 0
+[20/Nov/2013 18:49:36] "GET /mysite/myapp/ HTTP/1.1" 200 3218
+[20/Nov/2013 18:50:08] "GET /mysite/myapp/ HTTP/1.1" 200 3218
+[20/Nov/2013 18:50:08] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 18:50:08] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 18:50:20] "GET /mysite/myapp/ HTTP/1.1" 200 3218
+[20/Nov/2013 18:50:35] "POST /mysite/myapp/create/ HTTP/1.1" 200 3344
+Internal Server Error: /mysite/myapp/create/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 40, in create
+    return read(request)
+  File "/home/action/workspace/mysite/myapp/views.py", line 24, in read
+    } for record in records ]
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+[20/Nov/2013 18:57:44] "POST /mysite/myapp/create/ HTTP/1.1" 500 66120
+[20/Nov/2013 18:57:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 18:57:56] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+Internal Server Error: /mysite/myapp/create/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 40, in create
+    return read(request)
+  File "/home/action/workspace/mysite/myapp/views.py", line 24, in read
+    } for record in records ]
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+[20/Nov/2013 18:57:58] "POST /mysite/myapp/create/ HTTP/1.1" 500 65920
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 24, in read
+    } for record in records ]
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-3: ordinal not in range(128)
+[20/Nov/2013 18:58:10] "GET /mysite/myapp/ HTTP/1.1" 500 56925
+[20/Nov/2013 18:58:42] "GET / HTTP/1.1" 200 14
+Validating models...
+
+0 errors found
+November 20, 2013 - 18:49:25
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Nov/2013 19:12:33] "POST /mysite/myapp/create/ HTTP/1.1" 200 3817
+[20/Nov/2013 19:12:59] "POST /mysite/myapp/create/ HTTP/1.1" 200 3967
+Validating models...
+
+0 errors found
+November 20, 2013 - 19:11:33
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 36, in read
+    'path' : path
+  File "/home/action/.local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 49, in render
+    context_instance = RequestContext(request, current_app=current_app)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/context.py", line 179, in __init__
+    self.update(processor(request))
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/context_processors.py", line 39, in debug
+    if settings.DEBUG and request.META.get('REMOTE_ADDR') in settings.INTERNAL_IPS:
+AttributeError: 'str' object has no attribute 'META'
+[20/Nov/2013 19:16:41] "GET /mysite/myapp/ HTTP/1.1" 500 79224
+Validating models...
+
+0 errors found
+November 20, 2013 - 19:16:34
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Nov/2013 19:19:57] "GET /mysite/myapp HTTP/1.1" 301 0
+[20/Nov/2013 19:20:04] "GET /mysite/myapp/ HTTP/1.1" 200 3967
+[20/Nov/2013 19:20:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 19:20:04] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 19:27:58] "GET /mysite/myapp/ HTTP/1.1" 200 4243
+[20/Nov/2013 19:27:58] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 19:27:58] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 133, in get_response
+    raise ValueError("The view %s.%s didn't return an HttpResponse object." % (callback.__module__, view_name))
+ValueError: The view myapp.views.delete didn't return an HttpResponse object.
+[20/Nov/2013 19:28:02] "GET /mysite/myapp/delete/?csrfmiddlewaretoken=2KHvO7Ly8DZAZQ1pQRsOPiKkbHfbmgha&del_id=a HTTP/1.1" 500 50326
+Validating models...
+
+0 errors found
+November 20, 2013 - 19:16:55
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Nov/2013 19:30:02] "GET /mysite/myapp/ HTTP/1.1" 200 4778
+Validating models...
+
+0 errors found
+November 20, 2013 - 19:29:51
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[20/Nov/2013 19:34:39] "GET /mysite/myapp/ HTTP/1.1" 200 4774
+[20/Nov/2013 19:34:39] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 19:34:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 48, in delete
+    record = models.Record.objects.get(id=request.DELETE['id'])
+AttributeError: 'WSGIRequest' object has no attribute 'DELETE'
+[20/Nov/2013 19:34:56] "GET /mysite/myapp/delete/?csrfmiddlewaretoken=2KHvO7Ly8DZAZQ1pQRsOPiKkbHfbmgha&id=16 HTTP/1.1" 500 56368
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 48, in delete
+    record = models.Record.objects.get(id=request.DELETE['id'])
+AttributeError: 'WSGIRequest' object has no attribute 'DELETE'
+[20/Nov/2013 19:38:09] "GET /mysite/myapp/delete/?csrfmiddlewaretoken=2KHvO7Ly8DZAZQ1pQRsOPiKkbHfbmgha&id=16 HTTP/1.1" 500 56426
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 48, in delete
+    record = models.Record.objects.get(id=request.DELETE['id'])
+AttributeError: 'WSGIRequest' object has no attribute 'DELETE'
+[20/Nov/2013 19:38:21] "GET /mysite/myapp/delete/?csrfmiddlewaretoken=2KHvO7Ly8DZAZQ1pQRsOPiKkbHfbmgha&id=16 HTTP/1.1" 500 56179
+Validating models...
+
+0 errors found
+November 20, 2013 - 19:30:21
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 48, in delete
+    record = models.Record.objects.get(id=request.POST['id'])
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/datastructures.py", line 295, in __getitem__
+    raise MultiValueDictKeyError("Key %r not found in %r" % (key, self))
+MultiValueDictKeyError: "Key 'id' not found in <QueryDict: {}>"
+[20/Nov/2013 19:38:53] "GET /mysite/myapp/delete/?csrfmiddlewaretoken=2KHvO7Ly8DZAZQ1pQRsOPiKkbHfbmgha&id=16 HTTP/1.1" 500 59667
+[20/Nov/2013 19:38:59] "GET /mysite/myapp/ HTTP/1.1" 200 4772
+[20/Nov/2013 19:39:02] "GET /mysite/myapp/ HTTP/1.1" 200 4772
+[20/Nov/2013 19:39:02] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[20/Nov/2013 19:39:02] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 19:39:24] "POST /mysite/myapp/delete/ HTTP/1.1" 200 4619
+[20/Nov/2013 19:43:28] "GET /mysite/myapp/ HTTP/1.1" 200 4622
+[20/Nov/2013 19:43:36] "POST /mysite/myapp/delete/ HTTP/1.1" 200 4467
+[20/Nov/2013 19:43:47] "POST /mysite/myapp/delete/ HTTP/1.1" 200 4304
+[20/Nov/2013 19:43:50] "POST /mysite/myapp/delete/ HTTP/1.1" 200 4149
+[20/Nov/2013 19:43:52] "POST /mysite/myapp/delete/ HTTP/1.1" 200 4000
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 48, in delete
+    record = models.Record.objects.get(id=request.POST['id'])
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: Record matching query does not exist. Lookup parameters were {'id': u'23'}
+[20/Nov/2013 19:43:54] "POST /mysite/myapp/delete/ HTTP/1.1" 500 64726
+[20/Nov/2013 19:44:00] "GET /mysite/myapp/ HTTP/1.1" 200 4000
+[20/Nov/2013 19:47:04] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3851
+[20/Nov/2013 19:47:04] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 19:47:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 19:47:07] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3702
+[20/Nov/2013 19:47:13] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3552
+[20/Nov/2013 19:47:15] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3402
+[20/Nov/2013 19:47:18] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3252
+[20/Nov/2013 19:47:22] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3099
+[20/Nov/2013 19:47:26] "POST /mysite/myapp/delete/ HTTP/1.1" 200 2946
+[20/Nov/2013 19:49:34] "POST /mysite/myapp/create/ HTTP/1.1" 200 3100
+[20/Nov/2013 19:54:28] "GET /mysite/myapp/ HTTP/1.1" 200 3124
+[20/Nov/2013 19:56:17] "GET /mysite/myapp/ HTTP/1.1" 200 3228
+[20/Nov/2013 19:56:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 19:56:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 19:58:13] "GET /mysite/myapp/ HTTP/1.1" 200 3279
+[20/Nov/2013 19:58:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[20/Nov/2013 19:58:13] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 19:58:57] "GET /mysite/myapp/ HTTP/1.1" 200 3448
+[20/Nov/2013 19:58:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 19:58:57] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 19:59:44] "GET /mysite/myapp/ HTTP/1.1" 200 3309
+[20/Nov/2013 19:59:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 19:59:44] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 20:00:45] "GET /mysite/myapp/ HTTP/1.1" 200 3311
+[20/Nov/2013 20:00:45] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 20:00:45] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 20:01:35] "GET /mysite/myapp/ HTTP/1.1" 200 3242
+[20/Nov/2013 20:01:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[20/Nov/2013 20:01:35] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[20/Nov/2013 20:01:59] "GET / HTTP/1.1" 200 14
+[20/Nov/2013 20:02:23] "GET /mysite/myapp HTTP/1.1" 301 0
+[20/Nov/2013 20:02:23] "GET /mysite/myapp/ HTTP/1.1" 200 3242
+[20/Nov/2013 20:02:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[20/Nov/2013 20:02:23] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 22:15:25] "GET / HTTP/1.1" 200 14
+[20/Nov/2013 22:15:35] "GET /mysite/myapp HTTP/1.1" 301 0
+[20/Nov/2013 22:15:35] "GET /mysite/myapp/ HTTP/1.1" 200 3242
+[20/Nov/2013 22:15:36] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 22:15:36] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[20/Nov/2013 22:16:09] "POST /mysite/myapp/create/ HTTP/1.1" 200 3405
+[20/Nov/2013 22:17:04] "GET / HTTP/1.1" 200 14
+[20/Nov/2013 22:17:05] "GET /mysite/myapp/ HTTP/1.1" 200 3405
+[20/Nov/2013 22:17:22] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 22:17:22] "GET /mysite/myapp HTTP/1.1" 301 0
+[20/Nov/2013 22:18:29] "GET / HTTP/1.1" 200 14
+[20/Nov/2013 22:18:46] "GET /mysite/myapp HTTP/1.1" 301 0
+[20/Nov/2013 22:18:47] "GET /mysite/myapp/ HTTP/1.1" 200 3405
+[20/Nov/2013 22:19:07] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[20/Nov/2013 22:21:14] "POST /mysite/myapp/delete/ HTTP/1.1" 200 3230
+[20/Nov/2013 22:37:30] "GET / HTTP/1.1" 200 14
+[21/Nov/2013 02:41:12] "GET /mysite/myapp/ HTTP/1.1" 200 3230
+[21/Nov/2013 08:41:10] "GET /mysite/myapp/ HTTP/1.1" 200 3230
+[21/Nov/2013 08:41:10] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 08:41:10] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 08:42:21] "POST /mysite/myapp/create/ HTTP/1.1" 200 3398
+[21/Nov/2013 08:43:15] "POST /mysite/myapp/create/ HTTP/1.1" 200 3578
+[21/Nov/2013 12:01:21] "GET / HTTP/1.1" 200 14
+[21/Nov/2013 12:01:25] "GET /mysite/myapp HTTP/1.1" 301 0
+[21/Nov/2013 12:01:25] "GET /mysite/myapp/ HTTP/1.1" 200 3578
+[21/Nov/2013 12:01:25] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 12:01:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+Validating models...
+
+0 errors found
+November 20, 2013 - 19:38:47
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 15:51:48] "GET /mysite HTTP/1.1" 404 2419
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/action/workspace/mysite/myapp/views.py", line 16
+    return HttpResponse("Hello, nihohi!<br>
+                                          ^
+SyntaxError: EOL while scanning string literal
+[21/Nov/2013 15:51:49] "GET / HTTP/1.1" 500 68193
+[21/Nov/2013 15:52:21] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 15:52:24] "GET /mysite/myapp/ HTTP/1.1" 200 3578
+[21/Nov/2013 15:52:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 15:52:25] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 15:52:33] "GET /mysite/myapp/ HTTP/1.1" 200 3578
+Validating models...
+
+0 errors found
+November 21, 2013 - 15:51:39
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 15:53:16] "GET /mysite/myapp/ HTTP/1.1" 200 3578
+[21/Nov/2013 15:53:16] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 15:53:16] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 15:53:17] "GET /mysite/myapp/ HTTP/1.1" 200 3578
+[21/Nov/2013 15:53:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 15:53:17] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+Validating models...
+
+0 errors found
+November 21, 2013 - 15:53:13
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 15:53:27] "GET /mysite/myapp/ HTTP/1.1" 200 3578
+[21/Nov/2013 15:53:27] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 15:53:27] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:11:55] "GET /mysite/myapp/ HTTP/1.1" 200 4372
+[21/Nov/2013 16:11:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 16:11:55] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:11:55] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:11:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:12:01] "GET /mysite/myapp/ HTTP/1.1" 200 4372
+[21/Nov/2013 16:12:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 16:12:01] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:12:01] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:12:02] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:14:23] "GET /mysite/myapp/ HTTP/1.1" 200 4413
+[21/Nov/2013 16:14:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 16:14:23] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:14:23] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:14:23] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:14:27] "GET /mysite HTTP/1.1" 404 2419
+[21/Nov/2013 16:14:29] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 16:14:30] "GET /mysite/myapp/ HTTP/1.1" 200 4413
+[21/Nov/2013 16:14:41] "GET /mysite/myapp/ HTTP/1.1" 200 4413
+[21/Nov/2013 16:18:08] "GET /mysite/myapp/ HTTP/1.1" 200 5213
+[21/Nov/2013 16:18:08] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 16:18:08] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 16:18:08] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:18:08] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:22:34] "GET /mysite/myapp/ HTTP/1.1" 200 7140
+[21/Nov/2013 16:22:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 16:22:34] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 16:22:34] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:22:34] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:23:52] "GET /mysite/myapp/ HTTP/1.1" 200 7149
+[21/Nov/2013 16:23:52] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:23:52] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:23:52] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:24:48] "GET /mysite/myapp/ HTTP/1.1" 200 7149
+[21/Nov/2013 16:24:48] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 16:24:48] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:24:48] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:24:51] "GET /mysite/myapp/ HTTP/1.1" 200 7149
+[21/Nov/2013 16:24:51] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:24:51] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:24:51] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:25:39] "GET /mysite/myapp/ HTTP/1.1" 200 7149
+[21/Nov/2013 16:25:40] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:25:40] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:25:40] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:36:01] "GET /mysite/myapp/ HTTP/1.1" 200 7307
+[21/Nov/2013 16:36:01] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 16:36:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:36:01] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 16:36:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 16:37:21] "GET /mysite/myapp/ HTTP/1.1" 200 7513
+[21/Nov/2013 16:37:21] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:37:21] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 16:37:21] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:37:21] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:37:38] "GET /mysite/myapp/ HTTP/1.1" 200 6855
+[21/Nov/2013 16:37:38] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:37:38] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 16:37:38] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 16:37:38] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:38:37] "GET /mysite/myapp/ HTTP/1.1" 200 6857
+[21/Nov/2013 16:38:37] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 16:38:37] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 16:38:37] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 16:38:37] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 17:09:22] "GET /mysite/myapp/ HTTP/1.1" 200 10755
+[21/Nov/2013 17:09:22] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 17:09:22] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:09:22] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:09:22] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:09:55] "GET /mysite/myapp/ HTTP/1.1" 200 10755
+[21/Nov/2013 17:09:55] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:09:55] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 17:09:55] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:09:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:10:59] "GET /mysite/myapp/ HTTP/1.1" 200 10940
+[21/Nov/2013 17:10:59] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 17:10:59] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 17:10:59] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:10:59] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 404 1758
+[21/Nov/2013 17:10:59] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:10:59] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:11:55] "GET /mysite/myapp/ HTTP/1.1" 200 11143
+[21/Nov/2013 17:11:55] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:11:55] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:11:55] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:11:55] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:11:55] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 304 0
+[21/Nov/2013 17:12:01] "GET /mysite/myapp/ HTTP/1.1" 200 11143
+[21/Nov/2013 17:12:01] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 17:12:01] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 404 1758
+[21/Nov/2013 17:12:01] "GET /static/DataTables-1.9.4/media/css/datatable.css HTTP/1.1" 200 10772
+[21/Nov/2013 17:12:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 17:12:01] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 28631
+[21/Nov/2013 17:12:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.min.js HTTP/1.1" 200 70857
+[21/Nov/2013 17:12:11] "GET /mysite HTTP/1.1" 404 2419
+[21/Nov/2013 17:12:12] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 17:12:15] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 17:12:17] "GET /mysite/myapp/ HTTP/1.1" 200 11143
+[21/Nov/2013 17:14:48] "GET /mysite/myapp/ HTTP/1.1" 200 10944
+[21/Nov/2013 17:14:48] "GET /media/css/demo_page.css HTTP/1.1" 404 2470
+[21/Nov/2013 17:14:48] "GET /media/css/demo_table.css HTTP/1.1" 404 2473
+[21/Nov/2013 17:14:48] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:14:48] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:14:48] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:14:48] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 17:15:20] "GET /mysite/myapp/ HTTP/1.1" 200 10982
+[21/Nov/2013 17:15:20] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:15:20] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:15:20] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:15:20] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:15:20] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:15:50] "GET /mysite/myapp/ HTTP/1.1" 200 10989
+[21/Nov/2013 17:15:50] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:15:50] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:15:50] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:15:50] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:19:54] "GET /mysite/myapp/ HTTP/1.1" 200 4672
+[21/Nov/2013 17:19:54] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:19:54] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:19:54] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:19:54] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 404 1758
+[21/Nov/2013 17:23:24] "GET /mysite/myapp/ HTTP/1.1" 200 5077
+[21/Nov/2013 17:23:24] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:23:24] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:23:24] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:23:24] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:24:02] "GET /mysite/myapp/ HTTP/1.1" 200 5085
+[21/Nov/2013 17:24:02] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:24:02] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:24:02] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:24:54] "GET /mysite/myapp/ HTTP/1.1" 200 5085
+[21/Nov/2013 17:24:54] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:24:54] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 404 1758
+[21/Nov/2013 17:24:54] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:24:54] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:26:27] "GET /mysite/myapp/ HTTP/1.1" 200 5085
+[21/Nov/2013 17:26:27] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:26:27] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:26:28] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:30:26] "GET /mysite/myapp/ HTTP/1.1" 200 5085
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 17:30:27] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 17:30:28] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 17:30:28] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 17:30:34] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 200 1118
+[21/Nov/2013 17:30:49] "GET /mysite/myapp/ HTTP/1.1" 200 5077
+[21/Nov/2013 17:30:49] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:30:49] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:30:49] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:30:49] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:30:49] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:30:50] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:30:50] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:30:50] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:30:50] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:30:50] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:31:07] "GET /static/DataTables-1.9.4/media/images/forward_enabled_hover.png HTTP/1.1" 200 1379
+[21/Nov/2013 17:33:33] "GET /mysite/myapp/ HTTP/1.1" 200 7023
+[21/Nov/2013 17:33:33] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:33:33] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:33:33] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:33:33] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:33:33] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:33:35] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:33:35] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:33:35] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:33:35] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:33:35] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:34:19] "GET /mysite/myapp/ HTTP/1.1" 200 7226
+[21/Nov/2013 17:34:19] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:34:19] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:34:19] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:34:19] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:34:19] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:34:20] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:34:20] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:34:20] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:34:20] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:34:20] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:35:15] "GET /mysite/myapp/ HTTP/1.1" 200 11375
+[21/Nov/2013 17:35:15] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:35:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:35:15] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:35:15] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 17:35:15] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:35:15] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:36:57] "GET /mysite/myapp/ HTTP/1.1" 200 11395
+[21/Nov/2013 17:36:57] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:36:57] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:36:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:36:57] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:36:57] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:36:59] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:36:59] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:36:59] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:36:59] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:36:59] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:39:16] "GET /mysite/myapp/ HTTP/1.1" 200 9306
+[21/Nov/2013 17:39:17] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:39:17] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:39:17] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:39:17] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:39:17] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:39:19] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:39:19] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:39:19] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:39:19] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:39:19] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:40:57] "GET /mysite/myapp/ HTTP/1.1" 200 9365
+[21/Nov/2013 17:40:57] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:40:57] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:40:57] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:40:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:40:57] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:40:59] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:40:59] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:40:59] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:40:59] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:40:59] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:23] "GET /mysite/myapp/ HTTP/1.1" 200 9354
+[21/Nov/2013 17:41:23] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:41:23] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:41:23] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:41:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:41:23] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:41:24] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:24] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:24] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:24] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:24] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:29] "GET /mysite/myapp/ HTTP/1.1" 200 9354
+[21/Nov/2013 17:41:29] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 17:41:29] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 17:41:29] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 17:41:29] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 17:41:29] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 17:41:30] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 17:41:30] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 17:41:30] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 17:41:30] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 17:41:30] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 17:41:39] "GET /mysite/myapp/ HTTP/1.1" 200 9338
+[21/Nov/2013 17:41:39] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:41:40] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:43:19] "GET /mysite/myapp/ HTTP/1.1" 200 9410
+[21/Nov/2013 17:43:20] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:43:20] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:43:20] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:43:20] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:43:20] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:43:22] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:43:22] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:43:22] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:43:22] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:43:22] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:44:20] "GET /mysite/myapp/ HTTP/1.1" 200 9605
+[21/Nov/2013 17:44:21] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:44:21] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:44:21] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:44:21] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:44:21] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:44:22] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:44:22] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:44:22] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:44:22] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:44:22] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:46:20] "GET /mysite/myapp/ HTTP/1.1" 200 10502
+[21/Nov/2013 17:46:21] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:46:21] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:46:21] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:46:21] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:46:21] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:46:23] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:46:23] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:46:23] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:46:23] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:46:23] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:46:27] "GET /mysite/myapp/ HTTP/1.1" 200 10502
+[21/Nov/2013 17:46:27] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 17:46:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 17:46:28] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 17:46:28] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 17:46:28] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 17:46:28] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 17:46:29] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 17:46:29] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 17:46:29] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 17:46:29] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 17:46:31] "GET /mysite/myapp/ HTTP/1.1" 200 10502
+[21/Nov/2013 17:46:31] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 17:46:32] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 17:46:32] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 17:46:59] "GET /mysite/myapp/ HTTP/1.1" 200 10510
+[21/Nov/2013 17:47:00] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:47:00] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:47:00] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:47:00] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:47:00] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:47:01] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:47:01] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:47:01] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:47:01] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:47:01] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:48:47] "GET /mysite/myapp/ HTTP/1.1" 200 10484
+[21/Nov/2013 17:48:47] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:48:47] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:48:47] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:48:47] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:48:47] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:48:49] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:48:49] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:48:49] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:48:49] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:48:49] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:49:13] "GET /mysite/myapp/ HTTP/1.1" 200 10484
+[21/Nov/2013 17:49:13] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:49:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:49:13] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:49:13] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:49:13] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:49:14] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:49:14] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:49:14] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:49:14] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:49:14] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:50:28] "GET /mysite/myapp/ HTTP/1.1" 200 6413
+[21/Nov/2013 17:50:28] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:50:28] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:50:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:50:29] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:50:29] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:50:30] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:50:30] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:50:30] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:50:30] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:50:30] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:51:31] "POST /mysite/myapp/create/ HTTP/1.1" 200 6736
+[21/Nov/2013 17:52:25] "POST /mysite/myapp/create/ HTTP/1.1" 200 7091
+[21/Nov/2013 17:53:01] "POST /mysite/myapp/create/ HTTP/1.1" 200 7446
+[21/Nov/2013 17:53:01] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:53:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:53:01] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:53:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:53:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:53:02] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:53:02] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:53:02] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:53:02] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:53:02] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:53:08] "POST /mysite/myapp/delete/ HTTP/1.1" 200 7091
+Internal Server Error: /mysite/myapp/delete/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 48, in delete
+    record = models.Record.objects.get(id=request.POST['id'])
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/manager.py", line 143, in get
+    return self.get_query_set().get(*args, **kwargs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/query.py", line 389, in get
+    (self.model._meta.object_name, kwargs))
+DoesNotExist: Record matching query does not exist. Lookup parameters were {'id': u'28'}
+[21/Nov/2013 17:54:44] "POST /mysite/myapp/delete/ HTTP/1.1" 500 67240
+[21/Nov/2013 17:54:53] "GET /mysite/myapp HTTP/1.1" 301 0
+[21/Nov/2013 17:54:53] "GET /mysite/myapp/ HTTP/1.1" 200 7090
+[21/Nov/2013 17:58:39] "GET /mysite/myapp/ HTTP/1.1" 200 7094
+[21/Nov/2013 17:58:39] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 17:58:39] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 17:58:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 17:58:39] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 17:58:39] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 17:58:40] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 17:58:40] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:58:40] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:58:40] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 17:58:40] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 17:59:27] "GET /static/DataTables-1.9.4/media/images/back_enabled.png HTTP/1.1" 200 1379
+[21/Nov/2013 17:59:27] "GET /static/DataTables-1.9.4/media/images/back_enabled_hover.png HTTP/1.1" 200 1375
+[21/Nov/2013 18:00:53] "POST /mysite/myapp/create/ HTTP/1.1" 200 7374
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 34, in read
+    context_instance=RequestContext(request))
+  File "/home/action/.local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/defaulttags.py", line 767, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/defaulttags.py", line 903, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 253, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 353, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '="gradeA"' from 'grade="gradeA"'
+[21/Nov/2013 18:10:19] "GET /mysite/myapp/ HTTP/1.1" 500 178680
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 34, in read
+    context_instance=RequestContext(request))
+  File "/home/action/.local/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 135, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/loader.py", line 157, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/defaulttags.py", line 767, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 274, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/defaulttags.py", line 903, in do_if
+    nodelist = parser.parse(('elif', 'else', 'endif'))
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 253, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 353, in compile_filter
+    return FilterExpression(token, self)
+  File "/home/action/.local/lib/python2.7/site-packages/django/template/base.py", line 570, in __init__
+    "from '%s'" % (token[upto:], token))
+TemplateSyntaxError: Could not parse the remainder: '='gradeA'' from 'grade='gradeA''
+[21/Nov/2013 18:11:21] "GET /mysite/myapp/ HTTP/1.1" 500 179052
+[21/Nov/2013 18:13:51] "GET /mysite/myapp/ HTTP/1.1" 200 7678
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:13:52] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:13:57] "GET /mysite/myapp/ HTTP/1.1" 200 7678
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 18:13:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 18:13:57] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 18:14:19] "GET /mysite/myapp/ HTTP/1.1" 200 7678
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 18:14:19] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 18:14:19] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 18:14:24] "GET /mysite/myapp/ HTTP/1.1" 200 7678
+[21/Nov/2013 18:14:24] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:14:24] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:14:24] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:14:24] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:14:24] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:14:25] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:14:25] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:14:25] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:14:25] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:14:25] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:14:27] "GET /mysite HTTP/1.1" 404 2419
+[21/Nov/2013 18:14:29] "GET / HTTP/1.1" 200 65
+Validating models...
+
+0 errors found
+November 21, 2013 - 15:53:26
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 18:19:39] "GET /mysite/myapp/ HTTP/1.1" 200 7358
+[21/Nov/2013 18:19:39] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:19:40] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:19:40] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:19:40] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:19:40] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:19:42] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:19:42] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:19:42] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:19:42] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:19:42] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+Validating models...
+
+0 errors found
+November 21, 2013 - 18:19:28
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 38, in read
+    } for record in records ]
+  File "/home/action/workspace/mysite/myapp/views.py", line 20, in judgeGrade
+    if record.score > 10000:
+NameError: global name 'record' is not defined
+[21/Nov/2013 18:24:54] "GET /mysite/myapp/ HTTP/1.1" 500 59570
+Validating models...
+
+0 errors found
+November 21, 2013 - 18:24:32
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 18:25:34] "GET /mysite/myapp/ HTTP/1.1" 200 7358
+[21/Nov/2013 18:25:34] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 18:25:34] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 18:25:34] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 18:25:35] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 18:25:35] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 18:25:36] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 18:25:36] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 18:25:36] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 18:25:36] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 18:25:36] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 18:27:46] "POST /mysite/myapp/create/ HTTP/1.1" 200 7730
+[21/Nov/2013 18:29:00] "POST /mysite/myapp/create/ HTTP/1.1" 200 8063
+Validating models...
+
+0 errors found
+November 21, 2013 - 18:25:23
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 18:37:57] "GET /mysite/myapp/ HTTP/1.1" 200 8063
+[21/Nov/2013 18:37:57] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:45:33] "GET /mysite/myapp/ HTTP/1.1" 200 8110
+[21/Nov/2013 18:45:34] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:45:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:45:34] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:45:34] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:45:34] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:45:36] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:45:36] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:45:36] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:45:36] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:45:36] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:47:26] "GET /mysite/myapp/ HTTP/1.1" 200 9054
+[21/Nov/2013 18:47:26] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:47:26] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:47:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:47:26] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:47:26] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:47:28] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:47:28] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:47:28] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:47:28] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:47:28] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+Validating models...
+
+0 errors found
+November 21, 2013 - 18:37:52
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 18:54:01] "GET /mysite/myapp/ HTTP/1.1" 200 9054
+[21/Nov/2013 18:54:04] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:54:04] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:54:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:54:04] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:54:04] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:54:05] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:54:05] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:54:05] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:54:05] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:54:05] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:57:54] "GET /mysite/myapp/ HTTP/1.1" 200 8346
+[21/Nov/2013 18:57:55] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:57:56] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:58:23] "GET /mysite/myapp/ HTTP/1.1" 200 8382
+[21/Nov/2013 18:58:23] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:58:23] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:58:23] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:58:24] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:58:24] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:58:25] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:58:25] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:58:25] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:58:25] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:58:25] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:59:26] "GET /mysite/myapp/ HTTP/1.1" 200 8156
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 18:59:28] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 18:59:37] "GET /mysite/myapp/ HTTP/1.1" 200 8156
+[21/Nov/2013 18:59:37] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 18:59:37] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 18:59:37] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 18:59:37] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 18:59:37] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 18:59:38] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 18:59:38] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 18:59:38] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 18:59:38] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 18:59:38] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:05:35] "GET /mysite/myapp/ HTTP/1.1" 200 8171
+[21/Nov/2013 19:05:38] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:05:38] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:05:38] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:05:38] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:05:38] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:05:39] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:05:39] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:05:39] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:05:39] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:05:39] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:06:30] "GET /mysite/myapp/ HTTP/1.1" 200 8212
+[21/Nov/2013 19:06:30] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:06:30] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:06:30] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:06:30] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:06:30] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:06:30] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:06:31] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:06:31] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:06:31] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:06:31] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:14:53] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 19:14:54] "GET /mysite/myapp/ HTTP/1.1" 200 8212
+[21/Nov/2013 19:15:55] "GET /mysite/myapp/ HTTP/1.1" 200 8225
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:15:55] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /mysite/myapp/ HTTP/1.1" 200 8238
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:18:51] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:43] "GET /mysite/myapp/ HTTP/1.1" 200 8200
+[21/Nov/2013 19:19:43] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:19:43] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:44] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:51] "GET /mysite/myapp/ HTTP/1.1" 200 8225
+[21/Nov/2013 19:19:51] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:19:52] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /mysite/myapp/ HTTP/1.1" 200 8211
+[21/Nov/2013 19:20:18] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:20:18] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:20:19] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:20:19] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:20:19] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:10] "GET /mysite/myapp/ HTTP/1.1" 200 8203
+[21/Nov/2013 19:22:10] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:22:10] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:22:10] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:22:10] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:22:10] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:22:11] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:11] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:11] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:11] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:11] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:26] "GET /mysite/myapp/ HTTP/1.1" 200 8211
+[21/Nov/2013 19:22:26] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:22:26] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:22:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:22:26] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:22:26] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:22:27] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:27] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:27] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:27] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:22:27] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:24:36] "GET /mysite/myapp/ HTTP/1.1" 200 7087
+[21/Nov/2013 19:24:36] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:24:36] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:24:36] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:24:36] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:24:36] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:24:36] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:24:37] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:24:37] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:24:37] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:24:37] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:24:42] "GET /mysite/myapp/ HTTP/1.1" 200 7087
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:24:42] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:24:42] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:25:23] "GET /mysite/myapp/ HTTP/1.1" 200 8152
+[21/Nov/2013 19:25:23] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:25:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:24] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:40] "GET /mysite/myapp/ HTTP/1.1" 200 8158
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:25:41] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /mysite/myapp/ HTTP/1.1" 200 8183
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:08] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:24] "GET /mysite/myapp/ HTTP/1.1" 200 8168
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:25] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:38] "GET /mysite/myapp/ HTTP/1.1" 200 8152
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:39] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:53] "GET /mysite/myapp/ HTTP/1.1" 200 8167
+[21/Nov/2013 19:26:53] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:53] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:26:53] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:53] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:26:54] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:54] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:54] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:54] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:26:54] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:28:00] "POST /mysite/myapp/create/ HTTP/1.1" 200 8519
+Validating models...
+
+0 errors found
+November 21, 2013 - 18:54:00
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 19:33:52] "GET /mysite/myapp/ HTTP/1.1" 200 8954
+Internal Server Error: /mysite/myapp/update/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 62, in update
+    record.save()
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/base.py", line 626, in save_base
+    rows = manager.using(using).filter(pk=pk_val)._update(values)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/query.py", line 591, in _update
+    return query.get_compiler(self.db).execute_sql(None)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1014, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 830, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 979, in as_sql
+    val = field.get_db_prep_save(val, connection=self.connection)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 304, in get_db_prep_save
+    prepared=False)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 296, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/home/action/.local/lib/python2.7/site-packages/django/db/models/fields/__init__.py", line 991, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string or a number, not 'tuple'
+[21/Nov/2013 19:34:47] "POST /mysite/myapp/update/ HTTP/1.1" 500 95531
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:31:06
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x1370a50>>
+Traceback (most recent call last):
+[21/Nov/2013 19:35:25] "POST /mysite/myapp/update/ HTTP/1.1" 200 8985
+[21/Nov/2013 19:35:25] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:35:25] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:35:25] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:35:25] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:35:25] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:35:26] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:35:26] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:35:26] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:35:26] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:35:26] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:36:03] "POST /mysite/myapp/update/ HTTP/1.1" 200 8989
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:35:21
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x216da50>>
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 114, in inner_run
+    ipv6=self.use_ipv6, threading=threading)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 193, in run
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 225, in serve_forever
+    r, w, e = select.select([self], [], [], poll_interval)
+AttributeError: 'NoneType' object has no attribute 'select'
+Internal Server Error: /mysite/myapp/update/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 66, in update
+    return read(request)
+  File "/home/action/workspace/mysite/myapp/views.py", line 31, in read
+    if request.has_key('sort_key'):
+AttributeError: 'WSGIRequest' object has no attribute 'has_key'
+[21/Nov/2013 19:39:36] "POST /mysite/myapp/update/ HTTP/1.1" 500 65010
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:37:58
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[21/Nov/2013 19:40:00] "POST /mysite/myapp/update/ HTTP/1.1" 200 8989
+[21/Nov/2013 19:40:00] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:40:01] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:39:56
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 41, in read
+    } for record in records ]
+AttributeError: 'datetime.datetime' object has no attribute 'published'
+[21/Nov/2013 19:47:45] "GET /mysite/myapp/ HTTP/1.1" 500 56832
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:47:34
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "/home/action/workspace/mysite/myapp/views.py", line 41, in read
+    } for record in records ]
+NameError: global name 'pytz' is not defined
+[21/Nov/2013 19:48:08] "GET /mysite/myapp/ HTTP/1.1" 500 56919
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:48:00
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/action/workspace/mysite/myapp/views.py", line 9, in <module>
+    import pytz
+ImportError: No module named pytz
+[21/Nov/2013 19:48:33] "GET /mysite/myapp/ HTTP/1.1" 500 82486
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/action/workspace/mysite/myapp/views.py", line 9, in <module>
+    import pytz
+ImportError: No module named pytz
+[21/Nov/2013 19:49:13] "GET /mysite/myapp/ HTTP/1.1" 500 82486
+Internal Server Error: /mysite/myapp/
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/handlers/base.py", line 103, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 321, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 223, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 230, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/functional.py", line 29, in wrapper
+    result = func(*args)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/urlresolvers.py", line 97, in get_callable
+    mod = import_module(mod_name)
+  File "/home/action/.local/lib/python2.7/site-packages/django/utils/importlib.py", line 35, in import_module
+    __import__(name)
+  File "/home/action/workspace/mysite/myapp/views.py", line 9, in <module>
+    import pytz
+ImportError: No module named pytz
+[21/Nov/2013 19:49:16] "GET /mysite/myapp/ HTTP/1.1" 500 82516
+[21/Nov/2013 19:50:39] "GET /mysite/myapp/ HTTP/1.1" 200 8989
+[21/Nov/2013 19:50:39] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:50:39] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:50:39] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:50:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:50:39] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:50:39] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:50:40] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:50:40] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:50:40] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:50:40] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:51:30] "POST /mysite/myapp/create/ HTTP/1.1" 200 9364
+[21/Nov/2013 19:52:00] "GET /mysite/myapp/ HTTP/1.1" 200 9364
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:52:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:52:01] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:52:40] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:52:40] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:52:43] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:52:43] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:52:43] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:52:44] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:52:44] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:52:47] "GET /mysite HTTP/1.1" 404 2419
+[21/Nov/2013 19:52:48] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 19:52:59] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:52:59] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:52:59] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:52:59] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:52:59] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:52:59] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:53:00] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:53:00] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:53:00] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:53:00] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:53:00] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:54:41] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:54:41] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:54:41] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 19:54:41] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:54:41] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:54:41] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:54:42] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:54:42] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:54:42] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:54:42] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:54:42] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:54:43] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:54:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:54:44] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:54:47] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:54:47] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:54:47] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:54:47] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:54:47] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:54:47] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:54:47] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:54:48] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:54:48] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:54:48] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:54:48] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:56:33] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10786
+[21/Nov/2013 19:56:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:34] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:44] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10786
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:45] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:47] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:56:47] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:56:47] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:56:47] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:56:47] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10786
+[21/Nov/2013 19:56:48] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:56:48] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:56:48] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:56:48] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:56:48] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:56:48] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:56:55] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:56:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10786
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:56:56] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:00] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:57:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10786
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:57:01] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:57:10] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:57:10] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 19:57:10] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10786
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 19:57:11] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 19:57:44] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:57:44] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:57:44] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:57:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:57:44] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:57:44] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:57:45] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:45] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:45] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:45] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:45] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:57] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:57:57] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 19:57:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:57:57] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:57:57] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:57:57] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:57:58] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:58] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:58] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:58] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:57:58] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:32] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:59:32] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:59:32] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:59:32] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:59:32] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:59:32] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10773
+[21/Nov/2013 19:59:33] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:34] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:34] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:34] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:34] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:50] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 19:59:50] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 19:59:50] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10773
+[21/Nov/2013 19:59:50] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 19:59:50] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 19:59:50] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 19:59:51] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:51] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:51] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:51] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 19:59:51] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:00:28] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 20:00:28] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:00:28] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10773
+[21/Nov/2013 20:00:28] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:00:28] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:00:28] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:00:29] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:00:29] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:00:29] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:00:29] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:00:29] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:01:21] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 20:01:22] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:01:22] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:01:22] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10813
+[21/Nov/2013 20:01:22] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:01:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:01:23] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:01:23] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:01:23] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:01:23] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:01:23] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:03:39] "GET /mysite/myapp/ HTTP/1.1" 200 9380
+[21/Nov/2013 20:03:39] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10827
+[21/Nov/2013 20:03:39] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:03:39] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:03:39] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:03:39] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:03:40] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:03:40] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:03:40] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:03:40] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:03:40] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:06:22] "GET /mysite/myapp/ HTTP/1.1" 200 9393
+[21/Nov/2013 20:06:22] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:06:22] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:06:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:06:22] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:06:22] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:06:23] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:06:23] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:06:23] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:06:23] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:06:23] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:10:25] "GET /mysite/myapp/ HTTP/1.1" 200 9393
+[21/Nov/2013 20:10:25] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 20:10:25] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10827
+[21/Nov/2013 20:10:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 20:10:26] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 20:12:16] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 20:12:18] "GET /mysite/myapp/ HTTP/1.1" 200 9393
+[21/Nov/2013 20:12:18] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:13:01] "GET /mysite/myapp/ HTTP/1.1" 200 9393
+[21/Nov/2013 20:13:01] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:13:01] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:13:01] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:13:01] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:13:01] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:13:02] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:02] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:02] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:02] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:02] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:53] "GET /mysite/myapp/ HTTP/1.1" 200 9393
+[21/Nov/2013 20:13:53] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:13:53] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 20:13:53] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:13:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:13:53] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:13:55] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:55] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:55] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:55] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:13:55] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:20] "GET /mysite/myapp/ HTTP/1.1" 200 9433
+[21/Nov/2013 20:18:20] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:18:20] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:18:20] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:18:20] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 20:18:20] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:18:21] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:21] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:21] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:21] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:21] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:33] "GET /mysite/myapp/ HTTP/1.1" 200 9434
+[21/Nov/2013 20:18:33] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:18:33] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:18:33] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:18:34] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:18:34] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:18:34] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:34] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:34] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:18:34] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:21:22] "GET /mysite/myapp/ HTTP/1.1" 200 9666
+[21/Nov/2013 20:21:22] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:21:22] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:21:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:21:22] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:21:22] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:21:23] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:21:23] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:21:43] "GET /mysite/myapp/ HTTP/1.1" 200 9576
+[21/Nov/2013 20:21:43] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:21:43] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:21:43] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:21:43] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:21:43] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:22:03] "GET /mysite/myapp/ HTTP/1.1" 200 9471
+[21/Nov/2013 20:22:04] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:22:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:22:04] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:22:04] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:22:04] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:22:06] "GET /mysite/myapp/ HTTP/1.1" 200 9471
+[21/Nov/2013 20:22:07] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 20:22:07] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 20:22:07] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 20:22:07] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 20:22:07] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 20:22:22] "GET /mysite/myapp/ HTTP/1.1" 200 9434
+[21/Nov/2013 20:22:23] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:22:23] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:22:23] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:22:23] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:22:23] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:22:24] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:22:24] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:22:24] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:22:24] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /mysite/myapp/ HTTP/1.1" 200 9454
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:04] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:17] "GET /mysite/myapp/ HTTP/1.1" 200 9455
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:18] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:57] "GET /mysite/myapp/ HTTP/1.1" 200 9456
+[21/Nov/2013 20:26:58] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:26:58] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:58] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:58] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:26:58] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:26:59] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:59] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:59] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:26:59] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:15] "GET /mysite/myapp/ HTTP/1.1" 200 9456
+[21/Nov/2013 20:27:15] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:15] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:15] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:15] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:27:15] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:27:16] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:16] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:16] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:16] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:36] "GET /mysite/myapp/ HTTP/1.1" 200 9456
+[21/Nov/2013 20:27:36] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:36] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:36] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:27:36] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:36] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:27:37] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:37] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:37] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:37] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:44] "GET /mysite/myapp/ HTTP/1.1" 200 9456
+[21/Nov/2013 20:27:44] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:27:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:44] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:44] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:27:44] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:27:45] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:45] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:45] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:27:45] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:28:33] "GET /mysite/myapp/ HTTP/1.1" 200 9478
+[21/Nov/2013 20:28:33] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:28:33] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:28:33] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:28:33] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:28:33] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:28:34] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:28:34] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:28:34] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:28:34] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:04] "GET /mysite/myapp/ HTTP/1.1" 200 9479
+[21/Nov/2013 20:29:04] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:29:04] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:29:04] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:29:04] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:29:04] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:29:05] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:05] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:05] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:05] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:24] "GET /mysite/myapp/ HTTP/1.1" 200 9478
+[21/Nov/2013 20:29:24] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:29:24] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:29:24] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:29:24] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:29:24] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:29:25] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:25] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:25] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:29:25] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:30:11] "GET /mysite/myapp/ HTTP/1.1" 200 9465
+[21/Nov/2013 20:30:11] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:30:11] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:30:11] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:30:11] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:30:11] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:30:12] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:30:12] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:30:13] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:30:13] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:12] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:31:12] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:12] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:12] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:31:12] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:31:12] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:14] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:14] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:14] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:14] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:38] "GET /mysite/myapp/ HTTP/1.1" 200 9465
+[21/Nov/2013 20:31:38] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:38] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:38] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:38] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:31:38] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:31:39] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:39] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:39] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:39] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:56] "GET /mysite/myapp/ HTTP/1.1" 200 9485
+[21/Nov/2013 20:31:56] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:56] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:31:56] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:31:56] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:31:57] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:57] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:57] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:31:57] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:11] "GET /mysite/myapp/ HTTP/1.1" 200 9485
+[21/Nov/2013 20:32:12] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:12] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:12] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:12] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:12] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:13] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:13] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:13] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:13] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:21] "GET /mysite/myapp/ HTTP/1.1" 200 9485
+[21/Nov/2013 20:32:22] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:22] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:22] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:22] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:22] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:23] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:23] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:23] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:23] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:30] "GET /mysite/myapp/ HTTP/1.1" 200 9485
+[21/Nov/2013 20:32:31] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:31] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:31] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:31] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:31] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:32] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:32] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:32] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:32] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:42] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:32:42] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:42] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:42] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:42] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:42] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:43] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:44] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:44] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:44] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:46] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:32:46] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:47] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:47] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:47] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:47] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:48] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:48] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:48] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:48] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:57] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:32:57] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:57] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:57] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:32:57] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:57] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:32:58] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:58] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:58] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:32:58] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:33:43] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:33:43] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:33:43] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:33:43] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:33:43] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:33:43] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:33:45] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:33:45] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:33:45] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:33:45] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:34:03] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:34:03] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:34:03] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:34:03] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:34:03] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:34:03] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:34:04] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:34:04] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:34:04] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:34:04] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:38:28] "GET /mysite/myapp/ HTTP/1.1" 200 9484
+[21/Nov/2013 20:38:28] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:46:05] "POST /mysite/myapp/create/ HTTP/1.1" 200 9798
+[21/Nov/2013 20:46:10] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 20:46:10] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 20:46:10] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:46:10] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 20:46:10] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 20:46:11] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 20:46:11] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 20:46:11] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 20:46:11] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 20:53:35] "GET /static/bootstrap/js/bootstrap.min.js HTTP/1.1" 304 0
+[21/Nov/2013 20:53:43] "POST /mysite/myapp/create/ HTTP/1.1" 200 10100
+[21/Nov/2013 20:53:43] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 20:53:43] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 20:53:43] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 20:53:43] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 20:53:43] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 20:53:44] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 20:53:44] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 20:53:44] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:53:44] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 20:53:54] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 20:54:05] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 200 1118
+[21/Nov/2013 22:30:41] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 22:30:43] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:30:44] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 22:30:44] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 22:30:44] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:30:44] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:30:44] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 22:30:45] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 22:30:45] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 22:30:45] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 22:30:45] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 22:30:54] "GET /static/DataTables-1.9.4/media/images/forward_disabled.png HTTP/1.1" 200 1363
+[21/Nov/2013 22:31:40] "GET /static/DataTables-1.9.4/media/images/forward_enabled_hover.png HTTP/1.1" 200 1379
+[21/Nov/2013 22:31:41] "GET /static/DataTables-1.9.4/media/images/back_enabled.png HTTP/1.1" 200 1379
+[21/Nov/2013 22:31:43] "GET /static/DataTables-1.9.4/media/images/back_enabled_hover.png HTTP/1.1" 200 1375
+[21/Nov/2013 22:31:53] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 200 1765
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 22:31:53] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 106006
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 200 1127
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 200 1361
+[21/Nov/2013 22:31:53] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 200 1380
+[21/Nov/2013 22:31:54] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 200 1136
+[21/Nov/2013 22:32:27] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:32:27] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:32:27] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:11] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:33:13] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:33:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:33:13] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:33:13] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 22:33:13] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:33:13] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:33:14] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:14] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:14] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:14] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:25] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:26] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:33:33] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 22:33:35] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 22:33:53] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 22:33:56] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 22:33:57] "GET / HTTP/1.1" 200 65
+[21/Nov/2013 22:34:00] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:34:14] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:34:14] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:34:18] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 22:35:31] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:31] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:41] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:42] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:58] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:35:59] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:12] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:36:12] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:36:13] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:13] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:33] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:36:33] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:36:34] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:34] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:36:46] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:46] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10771
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:36:56] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:02] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:03] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10771
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:12] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:20] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:37:27] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 22:37:27] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 22:37:28] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:37:28] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10770
+[21/Nov/2013 22:37:29] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:29] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:46] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:37:46] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:46] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:46] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:37:46] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:37:46] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10771
+[21/Nov/2013 22:37:46] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:46] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:47] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:37:47] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:38:05] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:38:05] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:38:05] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:38:05] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:38:05] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[21/Nov/2013 22:38:05] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:38:06] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:38:06] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:38:06] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:38:06] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:39:11] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:39:15] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 200 93434
+[21/Nov/2013 22:39:24] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 200 377508
+[21/Nov/2013 22:40:14] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:40:14] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[21/Nov/2013 22:43:32] "GET / HTTP/1.1" 200 65
+[22/Nov/2013 00:12:08] "GET / HTTP/1.1" 200 65
+[22/Nov/2013 00:12:12] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[22/Nov/2013 00:12:13] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 304 0
+[22/Nov/2013 00:12:17] "GET /static/DataTables-1.9.4/media/images/sort_asc.png HTTP/1.1" 200 1118
+[22/Nov/2013 00:13:35] "GET / HTTP/1.1" 200 65
+[22/Nov/2013 00:13:50] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[22/Nov/2013 00:15:12] "GET / HTTP/1.1" 200 65
+[22/Nov/2013 00:15:21] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+Validating models...
+
+0 errors found
+November 21, 2013 - 19:48:28
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+November 22, 2013 - 08:13:04
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+November 22, 2013 - 08:13:05
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Validating models...
+
+0 errors found
+November 22, 2013 - 08:13:07
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <bound method Command.inner_run of <django.contrib.staticfiles.management.commands.runserver.Command object at 0x30e1ad0>>
+Traceback (most recent call last):
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 114, in inner_run
+    ipv6=self.use_ipv6, threading=threading)
+  File "/home/action/.local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 193, in run
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 225, in serve_forever
+    r, w, e = select.select([self], [], [], poll_interval)
+AttributeError: 'NoneType' object has no attribute 'select'
+Validating models...
+
+0 errors found
+November 22, 2013 - 08:13:10
+Django version 1.5.1, using settings 'mysite.settings'
+Development server is running at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+[22/Nov/2013 10:26:16] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[22/Nov/2013 10:26:16] "GET /static/DataTables-1.9.4/media/css/demo_page.css HTTP/1.1" 304 0
+[22/Nov/2013 10:26:16] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[22/Nov/2013 10:26:16] "GET /static/DataTables-1.9.4/media/js/jquery.js HTTP/1.1" 304 0
+[22/Nov/2013 10:26:16] "GET /static/DataTables-1.9.4/media/js/jquery.dataTables.js HTTP/1.1" 304 0
+[22/Nov/2013 10:26:16] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
+[22/Nov/2013 10:26:17] "GET /static/DataTables-1.9.4/media/images/sort_desc.png HTTP/1.1" 304 0
+[22/Nov/2013 10:26:17] "GET /static/DataTables-1.9.4/media/images/sort_both.png HTTP/1.1" 304 0
+[22/Nov/2013 10:26:17] "GET /static/DataTables-1.9.4/media/images/forward_enabled.png HTTP/1.1" 304 0
+[22/Nov/2013 10:26:17] "GET /static/DataTables-1.9.4/media/images/back_disabled.png HTTP/1.1" 304 0
+[22/Nov/2013 10:27:05] "GET /static/DataTables-1.9.4/media/images/forward_enabled_hover.png HTTP/1.1" 200 1379
+[22/Nov/2013 10:27:06] "GET /static/DataTables-1.9.4/media/images/back_enabled.png HTTP/1.1" 200 1379
+[22/Nov/2013 11:15:42] "GET /mysite/myapp/ HTTP/1.1" 200 10100
+[22/Nov/2013 11:15:42] "GET /static/DataTables-1.9.4/media/css/demo_table.css HTTP/1.1" 200 10772
+[22/Nov/2013 11:15:42] "GET /static/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 0
